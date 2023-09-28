@@ -13,9 +13,8 @@ const Navbar = () => {
                 <NavItems>
                         <NavLink href='#about'>About</NavLink>
                         <NavLink href='#skills'>Skills</NavLink>
-                        <NavLink href='#Experience'>Experience</NavLink>
-                        <NavLink href='#Projects'>Projects</NavLink>
-                        <NavLink href='#Education'>Education</NavLink>
+                        <NavLink href='#Experience'>Achievements</NavLink>
+
                 </NavItems>
                 <ButtonContainer>
                         <GitHubButton>GitHub Profile</GitHubButton>

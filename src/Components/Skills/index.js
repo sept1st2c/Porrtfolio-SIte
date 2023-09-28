@@ -1,12 +1,16 @@
-import React from 'react'
+
 import { skills } from '../../data/constants'
 import styled from 'styled-components'
+import { useEffect } from 'react'
 
 const Skills = () => {
+  
+  
+
   return (
     <Container id='skills'>
       <Wrapper>
-        <Tittle>SKILLS</Tittle>
+        <Tittle data-aos="fade-up">SKILLS</Tittle>
         <Desc>
           Here are some of my skills which I have for now :D
         </Desc>
@@ -56,7 +60,7 @@ const Tittle = styled.div`
   font-weight: 600;
   text-align: center;
   margin-top: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: #F39F5A;
 
 `;
 const Desc = styled.div`
@@ -71,14 +75,21 @@ const SkillsContainer = styled.div`
   margin-top: 30px;
   justify-content: center;
   gap: 30px;
+  
+  
 `;
 const Skill = styled.div`
   width: 300px;
   height: 300px;
   background-color: ${({ theme }) => theme.card};
-  border: 0.1px solid #854ce6;
+  border: 0.1px solid #AE445A;
   border-radius: 16px;
   padding: 18px 36px;
+  transition: 0.3s ease-in-out;
+  :hover{
+    scale: 101%;
+    filter: drop-shadow(0 0.1em 0.3em #F39F5A);
+}
 `;
 const SkillTittle = styled.h2`
   font-size: 28px;
@@ -90,9 +101,10 @@ const SkillTittle = styled.h2`
 `;
 const SkillList = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 7px;
   margin-bottom: 20px;
 `;
 const SkillItem = styled.div`

@@ -1,15 +1,21 @@
 import './App.css';
-import styled, { ThemeProvider } from 'styled-components';
+import { useEffect } from 'react';
+import styled , { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './utils/Theme';
 import Navbar from './Components/Navbar';
 import Hero from './Components/HeroSection';
 import Skills from './Components/Skills';
 import Education from './Components/Education';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Exprience from './Components/Experience';
+import Footer from './Components/Footer';
+
 
 function App() {
+
   return (
-    <div className="animation">
+    <div className='animation'>
+
     <ThemeProvider theme={darkTheme} >
       <Router>
         <Navbar/>
@@ -17,8 +23,10 @@ function App() {
           <Hero/>
           <Wrapper>
             <Skills/>
+            <Exprience/>  
             <Education/>
           </Wrapper> 
+          <Footer/>
         </Body>
       </Router>
     </ThemeProvider>
@@ -36,9 +44,9 @@ const Body = styled.div `
 `;
 const Wrapper = styled.div `
   background: linear-gradient(
-        38.73deg,
-        rgba(204, 0, 187, 0.15) 0%,
-        rgba(201, 32, 184, 0) 50%
+      90.73deg,
+        rgba(204, 0, 187, 0.15) 25%,
+        rgba(201, 32, 184, 0) 80%
       ),
       linear-gradient(
         141.27deg,

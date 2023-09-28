@@ -16,6 +16,7 @@ body{
   margin: 0px !important;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  background-color: rgb(83, 13, 99);
 }
 
 /* width */
@@ -46,10 +47,19 @@ body{
 @keyframes fade  {
   0% {
     opacity: 0;
-    scale: 105%;
+
+
   }
   100% {
     opacity: 1;
-    scale: 100%;
+
+
   }
+}
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
 }
