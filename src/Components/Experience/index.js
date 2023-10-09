@@ -12,7 +12,7 @@ import ExperienceCard from '../Cards/ExperienceCard';
 
 const Exprience = () => {
   return (
-    <Container id="experience">
+    <Container id="achievements">
         <Wrapper>
                 <Tittle>Achievements</Tittle>
                 <Desc>Here are some of my Achievements</Desc>
