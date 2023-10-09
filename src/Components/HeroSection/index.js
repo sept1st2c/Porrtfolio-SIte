@@ -12,7 +12,7 @@ const Hero = () => {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer>
-            <Tittle>Hlw, I'm <br/>
+            <Tittle>Hlw, I <br/>
             {Bio.name}
             </Tittle>
             <TextLoop>
