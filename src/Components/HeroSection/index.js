@@ -48,6 +48,9 @@ const HeroContainer = styled.div`
   padding: 80px 30px;
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%); 
+  @media (max-width: 640) {
+    padding: 32px 16px;
+  }
 `;
 
 const HeroBg = styled.div`
@@ -63,6 +66,10 @@ const HeroBg = styled.div`
   top: -5%;
   left: 6%;
 
+   @media (max-width: 960px) {
+    justify-content: center;
+    padding: 0 0px;
+
 `;
 
 const HeroInnerContainer = styled.div`
@@ -72,11 +79,30 @@ const HeroInnerContainer = styled.div`
   align-items: center;
   width: 100%;
   max-width: 1100px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
   `;
 
 const HeroLeftContainer =styled.div`
   width: 100%;
   order: 1;
+
+  @media (max-width: 960px) {
+    order: 2;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 640px) {
+    order: 2;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   `;
 
 const HeroRightContainer =styled.div`
@@ -86,12 +112,33 @@ const HeroRightContainer =styled.div`
   justify-content: end;
   gap: 12px;
 
+  @media (max-width: 960px) {
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 640px) {
+    margin-bottom: 30px;
+  }
+
 `;
 const Tittle = styled.div `
   font-size: 50px;
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
 
 `;
 const TextLoop = styled.div `
@@ -101,6 +148,15 @@ const TextLoop = styled.div `
   line-height: 68px;
   gap: 12px;
   display: flex;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
 `;
 const Span = styled.span `
   color: ${({ theme }) => theme.primary};
@@ -113,6 +169,15 @@ const SubTitle = styled.div`
   opacity: 70%;
   line-height: 32px;
   margin-bottom: 42px;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
 `;
 const Image = styled.img `
   width: 100%;
@@ -125,4 +190,14 @@ const Image = styled.img `
   object-fit: cover;
   object-position: center;
   border-radius: 2px solid ${({ theme }) => theme.primary};
+
+  @media (max-width: 768px) {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
 `;
