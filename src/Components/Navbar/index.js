@@ -162,7 +162,7 @@ const MobileIcon = styled.div`
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
   }
-`
+`;
 
 const MobileMenu = styled.div`
     display: flex;
@@ -183,7 +183,7 @@ const MobileMenu = styled.div`
     z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
 
 `
-
+;
 const MobileMenuItems = styled.ul`
   display: flex;
   flex-direction: column;
@@ -193,7 +193,7 @@ const MobileMenuItems = styled.ul`
   list-style: none;
   width: 100%;
   height: 100%;
-`
+`;
 
 const MobileMenuLink = styled(LinkR)`
   color: ${({ theme }) => theme.text_primary};
