@@ -15,9 +15,7 @@ const Navbar = () => {
     <Nav>
       <NavContainer>
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </a>
+          <img src='./septic2.png' alt='logo'/>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
