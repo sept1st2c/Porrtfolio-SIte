@@ -12,10 +12,10 @@ import ExperienceCard from '../Cards/ExperienceCard';
 
 const Exprience = () => {
   return (
-    <Container id="achievements">
+    <Container id="experience">
         <Wrapper>
-                <Tittle>Achievements</Tittle>
-                <Desc>Here are some of my Achievements</Desc>
+                <Tittle>Experiences</Tittle>
+                <Desc>Here are some of my Achievements and Experiences</Desc>
                 <TimeLineSection>
                         <Timeline>
                         {experiences.map((experience,index) => (
